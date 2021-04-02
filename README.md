@@ -6,7 +6,9 @@
   <img src="title.png">
 </p>
 
-In this repository I'll talk about the questions which require the interviewee to design a high-level architecture for some sort of a software system. This can be a web facing service, a RESTful API, a peer-to-peer desktop app, and so on. The exact type of question will most likely vary depending on the specifics of the company you interview at.
+## What are System Design Questions?
+
+In this section I'll talk about the questions which require the interviewee to design a high-level architecture for some sort of a software system. This can be a web facing service, a RESTful API, a peer-to-peer desktop app, and so on. The exact type of question will most likely vary depending on the specifics of the company you interview at.
 
 ## Some Examples
 
@@ -259,6 +261,6 @@ We discussed several strategies for practicing system design questions. By combi
 
 My recommendation is to start by working on system design questions yourself, then move on to discussing designs with friends, to finally doing mock interviews.
 
-Good luck and enjoy!
+**Good luck and enjoy!**
 
 If you have any doubts regarding system design, feel free to contact me **abhisheksharma.0517@gmail.com**.
