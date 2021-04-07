@@ -8,7 +8,7 @@
 
 ## What are System Design Questions?
 
-In this section I'll talk about the questions which require the interviewee to design a high-level architecture for some sort of a software system. This can be a web facing service, a RESTful API, a peer-to-peer desktop app, and so on. The exact type of question will most likely vary depending on the specifics of the company you interview at.
+In this section, I'll talk about the questions which require the interviewee to design a high-level architecture for some sort of software system. This can be a web-facing service, a RESTful API, a peer-to-peer desktop app, and so on. The exact type of question will most likely vary depending on the specifics of the company you interview at.
 
 ## Some Examples
 
@@ -16,10 +16,10 @@ I can give a few examples of such questions:
 
 * Design a URL shortening service like bit.ly.
 * How would you implement the Google search?
-* Design a client-server application which allows people to play chess with one another.
+* Design a client-server application that allows people to play chess with one another.
 * How would you store the relations in a social network like Facebook and implement a feature where one user receives notifications when their friends like the same things as they do?
 
-Hopefully these example questions give you some idea of what I will be talking about. The web is full of many other examples. In addition to that the book [Cracking the Coding Interview](https://github.com/black-shadows/Cracking-the-Coding-Interview) has a small section offering some more such questions.
+Hopefully, these example questions give you some idea of what I will be talking about. The web is full of many other examples. In addition to that the book [Cracking the Coding Interview](https://github.com/black-shadows/Cracking-the-Coding-Interview) has a small section offering some more such questions.
 
 ## Don't Panic
 
@@ -33,10 +33,9 @@ Finally, keep in mind that the discussion about the same system design problem c
 
 ## Our Approach
 
-Similar to the algorithmic questions, I believe that system design questions require a combination of the right strategy and knowledge. By strategy I mean a way to approach the problem at an interview. I've seen good candidates fail not because they lack the knowledge but because they cannot focus on the right things while discussing a problem.
+Similar to the algorithmic questions, I believe that system design questions require a combination of the right strategy and knowledge. By strategy, I mean a way to approach the problem at an interview. I've seen good candidates fail not because they lack the knowledge but because they cannot focus on the right things while discussing a problem.
 
 Because of that, in the next few sections, I will present our strategy for approaching system design questions at tech interviews. In addition to that, I've collected useful online resources, which will help you update your knowledge of software systems design.
-
 
 ## Quick Overview
 
@@ -53,7 +52,7 @@ First things first: I'll kick off by replacing chaos with a structured approach 
 
 ## Designing Scalable Architectures
 
-With the right process in place, I'll move on to destroying the second obstacle to your dream job. I'll spend a significant amount of time on building up your knowledge and intuition around designing scalable architectures.
+With the right process in place, I'll move on to destroying the second obstacle to your dream job. I'll spend a significant amount of time building up your knowledge and intuition around designing scalable architectures.
 
 Scalability is the 4th step of the System Design Process. I am spending a disproportionate amount of time on it simply because this is where candidates struggle the most.
 
@@ -69,7 +68,7 @@ The very first thing you should do with any system design question is to clarify
 
 Usually, part of what the interviewer wants to see is if you can gather the requirements about the problem at hand, and design a solution that covers them well. Never assume things that were not explicitly stated.
 
-For example, the URL-shortening service could be meant to serve just a few thousand users, but each could be sharing millions of URLs. It could be meant to handle millions of clicks on the shortened URLs, or dozens. The service may have to provide extensive statistics about each shortened URL (which will increase your data size), or statistics may not be a requirement at all.
+For example, the URL-shortening service could be meant to serve just a few thousand users, but each could be sharing millions of URLs. It could be meant to handle millions of clicks on the shortened URLs or dozens. The service may have to provide extensive statistics about each shortened URL (which will increase your data size), or statistics may not be a requirement at all.
 
 You will also have to think about the use cases that are expected to occur. Your system will be designed based on what it's expected to do. Don't forget to make sure you know all the requirements the interviewer didn't tell you about in the beginning.
 
@@ -81,7 +80,7 @@ You can tell the interviewer that you would like to do that and draw a simple di
 
 Don’t get lured to dive deep into some particular aspect of the abstract design. Not yet. Rather, make sure you sketch the important components and the connections between them. Justify your ideas in front of the interviewer and try to address every constraint and use case.
 
-Usually, this sort of high-level design is a combination of well-known techniques, which people have developed. You have to make sure you are familiar with what's out there and feel comfortable using this knowledge. In this section I will assume that you have enough experience to design such a high-level system. My goal is to focus more on the next steps, where I will talk mainly about scalability and about removing bottlenecks.
+Usually, this sort of high-level design is a combination of well-known techniques, which people have developed. You have to make sure you are familiar with what's out there and feel comfortable using this knowledge. In this section, I will assume that you have enough experience to design such a high-level system. My goal is to focus more on the next steps, where I will talk mainly about scalability and about removing bottlenecks.
 
 If you feel like a complete beginner in system design, perhaps it will be very useful for you to first look at a book on the topic or take advantage of some of the resources I've shared in the sections above.
 
@@ -93,7 +92,7 @@ Now that you have your high-level design, start thinking about what bottlenecks 
 
 These are just examples of questions that you may have to answer in order to make your solution complete. It may be the case that the interviewer wants to direct the discussion in one particular direction. Then, maybe you won’t need to address all the bottlenecks but rather talk in more depth about one particular area. In any case, you need to be able to identify the weak spots in a system and be able to resolve them.
 
-Remember, usually each solution is a trade-off of some kind. Changing something will worsen something else. However, the important thing is to be able to talk about these trade-offs, and to measure their impact on the system given the constraints and use cases defined.
+Remember, usually, each solution is a trade-off of some kind. Changing something will worsen something else. However, the important thing is to be able to talk about these trade-offs and to measure their impact on the system given the constraints and use cases defined.
 
 Once you've outlined the core bottlenecks you see, you can start addressing them in the next step.
 
@@ -101,7 +100,7 @@ Once you've outlined the core bottlenecks you see, you can start addressing them
 
 Once you're ready with your high-level design and have made sure that the interviewer is ok with it, you can dive into making it more detailed. Usually, this means making your system scale.
 
-I've devoted the next sections of this discussion to the topic of scalability. I will first cover some theoretical fundamentals, and then look at many real-life examples of scalable architectures. Finally, I'll wrap things up with several of the core principles for discussing scalability at interviews.
+I've devoted the next sections of this discussion to the topic of scalability. I will first cover some theoretical fundamentals and then look at many real-life examples of scalable architectures. Finally, I'll wrap things up with several of the core principles for discussing scalability at interviews.
 
 ## Scalability: Fundamentals
 
@@ -130,7 +129,7 @@ Next, I recommend reading this great 4-post “Scalability for Dummies” tutori
 
 Using NoSQL instead of scaling a relational database
 Being asynchronous
-You would also know how to deal with the two major bottlenecks: handling a lot of users, and handling a lot of data.
+You would also know how to deal with the two major bottlenecks: handling a lot of users and handling a lot of data.
 
 Finally, you may want to read this tutorial on [Database Sharding](http://highscalability.com/blog/2009/8/6/an-unorthodox-approach-to-database-design-the-coming-of-the.html). It's a very common and powerful way of database scaling (as you learned from prof. Malan's lecture).
 
@@ -146,7 +145,7 @@ The goal is to show you how the theoretical principles from the previous section
 
 Here are some real-life architectures I'd recommend you read, analyze and understand:
 
-* [Uber](http://highscalability.com/blog/2016/10/12/lessons-learned-from-scaling-uber-to-2000-engineers-1000-ser.html): A nice article about how Uber had to scale fast, about breaking your service into many micro services spread across many repos
+* [Uber](http://highscalability.com/blog/2016/10/12/lessons-learned-from-scaling-uber-to-2000-engineers-1000-ser.html): A nice article about how Uber had to scale fast, about breaking your service into many microservices spread across many repos
 * [Facebook](http://highscalability.com/blog/2016/6/27/how-facebook-live-streams-to-800000-simultaneous-viewers.html): How Facebook handles 800,000 simultaneous viewers on a live stream
 * [Twitter](http://highscalability.com/blog/2016/4/20/how-twitter-handles-3000-images-per-second.html): How Twitter handles 3,000 image uploads per second and why the old ways it used would not work nowadays
 * [Salesforce](http://highscalability.com/blog/2013/9/23/salesforce-architecture-how-they-handle-13-billion-transacti.html): A relatively short example from Salesforce.
@@ -157,19 +156,19 @@ Don't worry if you don’t understand everything. Many of the posts contain lots
 
 As you read the posts, you'll start noticing common technologies and patterns appear. As you do, make sure you do some research on each frequently seen technology. Try to write down **what problem it solves**, what its alternatives are, and what some common pros and cons may be.
 
-One good way to research the alternatives to a technology is to type its name in Google followed by the text " vs ", and see what shows up in the Google Suggest box. For example, if you typed "rabbitmq vs" you'd get entires like "rabbitmq vs activemq", "rabbitmq vs redis", "rabbitmq vs msmq", "rabbitmq vs kafka" - which is a pretty good list to get you started. 
+One good way to research the alternatives to technology is to type its name in Google followed by the text " vs ", and see what shows up in the Google Suggest box. For example, if you typed "rabbitmq vs" you'd get entires like "rabbitmq vs activemq", "rabbitmq vs redis", "rabbitmq vs msmq", "rabbitmq vs kafka" - which is a pretty good list to get you started. 
 
 The goal of all this reading (other than having tons of fun) is to develop practical knowledge about what works and what doesn’t work in “the real world”. After reviewing a bunch of these architectures and seeing where they agree or disagree, you’d be very well positioned to move on to the next step.
 
 ## Scalability: Warp-up
 
-Alright, at this point you already have solid theoretical and practical understanding of system design. In this section, I'll wrap things up and put them in the context of technical interviews.
+Alright, at this point you already have a solid theoretical and practical understanding of system design. In this section, I'll wrap things up and put them in the context of technical interviews.
 
 ## Everything is a Tradeoff
 
 This is one of the most fundamental concepts in system design.
 
-Hopefully, at this point this is not a surprise to you. If you've looked at the real-life architectures, you saw that there rarely is one perfect way to do things. Each company ends up with a different architecture. Designing a scalable system is an optimization task: there are tons of constraints (time, budget, knowledge, complexity, technologies currently available, etc.), and you need to build the best thing that fits those constraints. Every technology, every pattern is great for some things, and not so great for others. Understanding these pros and cons, the advantages and disadvantages, is key.
+Hopefully, at this point, this is not a surprise to you. If you've looked at the real-life architectures, you saw that there rarely is one perfect way to do things. Each company ends up with a different architecture. Designing a scalable system is an optimization task: there are tons of constraints (time, budget, knowledge, complexity, technologies currently available, etc.), and you need to build the best thing that fits those constraints. Every technology, every pattern is great for some things, and not so great for others. Understanding these pros and cons, the advantages and disadvantages, is key.
 
 **Remember: there is no one optimal system design.**
 
@@ -181,9 +180,9 @@ In your preparation, don’t try to find silver bullets. Instead, focus on what 
 
 ## Putting it all together and Staying up to date
 
-At this point, the most useful thing you could do is come up with a one or two pager that contains the scalability lessons you've learned.
+At this point, the most useful thing you could do is come up with a one or two-pager that contains the scalability lessons you've learned.
 
-Finally, you'd be well served throughout your professional career to stay up to date on how scalability evolves. For example, 10 years ago there were no Amazon Web Services and companies were forced to manage their infrastructure in house. Nowadays, using services like EC2, RDS, S3, Elastic MapReduce, etc. you can build a giant company. So while AWS didn’t change the fundamental scalability principles, it did change the landscape of technologies people need to be familiar with when scaling. Thus, staying up to date is quite important (or else you’d be reinventing the wheel).
+Finally, you'd be well served throughout your professional career to stay up to date on how scalability evolves. For example, 10 years ago there were no Amazon Web Services, and companies were forced to manage their infrastructure in-house. Nowadays, using services like EC2, RDS, S3, Elastic MapReduce, etc. you can build a giant company. So while AWS didn’t change the fundamental scalability principles, it did change the landscape of technologies people need to be familiar with when scaling. Thus, staying up to date is quite important (or else you’d be reinventing the wheel).
 
 ## At the Interview
 
@@ -195,11 +194,11 @@ Second, keep in mind that system design questions serve as an idea exchange plat
 
 Don't get defensive: whenever your interviewer challenges your architectural choices, acknowledge that rarely an idea is perfect, and outline the advantages and disadvantages of your choice. Be open to new constraints to pop up during the discussion and to adjust your architecture on the fly.
 
-Most of all, have fun. Dreaming up architectures is a very stimulating mental process - enjoy it and stay positive. You're already equipped with the right knowledge, just apply it during your interview and you'll do well.
+Most of all, have fun. Dreaming up architecture is a very stimulating mental process - enjoy it and stay positive. You're already equipped with the right knowledge, just apply it during your interview and you'll do well.
 
 ## How to Practice?
 
-Practicing system design questions is more difficult than practicing algorithm design questions. For algorithm design there are online judges and courses like the one from [HiredInTech](https://www.hiredintech.com/courses/algorithm-design) that combine problem banks with sample solutions and automated graders that can tell you exactly how good your solution is. This is simply priceless. There is no such thing for system design.
+Practicing system design questions is more difficult than practicing algorithm design questions. For algorithm design, there are online judges and courses like the one from [HiredInTech](https://www.hiredintech.com/courses/algorithm-design) that combine problem banks with sample solutions and automated graders that can tell you exactly how good your solution is. This is simply priceless. There is no such thing as system design.
 
 So what do you do?
 
@@ -216,7 +215,7 @@ Also, there are some more useful resources online that you can take a look at:
 
 Look at the massive systems you use every day developed by the companies you are interviewing for. What systems did these companies have to design? Create a list of the fundamental system design questions that bubble up in your brain. Here are a few to get you started:
 
-* Twitter: real time feed of the tweets by the people you’re following
+* Twitter: real-time feed of the tweets by the people you’re following
 * Google: instantly returning the pages matching any search query (Search); Storing and serving massive amounts of video data (YouTube); Aggregating the world’s news by topic (Google news)
 * Facebook: serving massive amounts of photos
 
@@ -234,20 +233,20 @@ While practicing in isolation with a friend is very useful up to a point, at som
 
 Mock interviews are a fantastic way to practice system design questions. System design questions are all about organic discussions around trade-offs. Try to find an unbiased and knowledgeable person, and do several interviews with them. It can be a friend, a colleague, or you could use a paid service.
 
-Paid mock interviews allow you to practice being comfortable discussing ideas with a stranger, working under the stress of time pressure, and guarantee you objective feedback. And if the person providing it is skilled at interviewing, you’d get lots of action items and high-quality advice.
+Paid mock interviews allow you to practice being comfortable discussing ideas with a stranger, working under the stress of time pressure, and guarantee objective feedback. And if the person providing it is skilled at interviewing, you’d get lots of action items and high-quality advice.
 
 If you choose to do it with a friend, make sure they stay impartial and give you honest feedback (friends tend to be too nice to us). The nice thing about doing mock interviews with friends is that they are very generous with their time, so you can do multiple interviews with them at no cost. But make sure you choose a skilled interviewer: there is little value in doing mock interviews with someone who has poor interviewing skills.
 
-Nowadays, is it also possible to do mock interviews with other people online for free. One service that I found useful for this is [Pramp.com](https://www.pramp.com/?utm_source=hiredintech&utm_medium=website-link&utm_campaign=HiredInTech#/) - you could use it for your system design interview preparation.
+Nowadays, is it also possible to do mock interviews with other people online for free? One service that I found useful for this is [Pramp.com](https://www.pramp.com/?utm_source=hiredintech&utm_medium=website-link&utm_campaign=HiredInTech#/) - you could use it for your system design interview preparation.
 
 No matter if you choose paid services or interviewing with friends, mock interviews are going to be highly useful to you when it comes to system design questions. Make sure you do at least a few of those prior to your interview.
 
 ## Summary
 
-A strong process is crucial to successfully solving system design questions. I broke it down into four steps:
+A strong process is crucial to successfully solve system design questions. I broke it down into four steps:
 
-* **Scope** the problem: Don't make assumptions; Ask questions; Understand the constraints and use cases.
-* Sketch up an **abstract design** that illustrates the basic components of the system and the relationships between them.
+* **Scope** the problem: Don't make assumptions; ask questions; Understand the constraints and use cases.
+* Sketch-up an **abstract design** that illustrates the basic components of the system and the relationships between them.
 * Think about the **bottlenecks** these components face when the system scales.
 * Address these bottlenecks by using the fundamentals principles of **scalable system design.**
 
