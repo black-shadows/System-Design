@@ -208,6 +208,7 @@ I have several suggestions in the following lessons in this section.
 Also, there are some more useful resources online that you can take a look at:
 
 * [Basics of System Design](https://lethain.com/introduction-to-architecting-systems-for-scale/)
+* [Concepts You Should Know](https://www.freecodecamp.org/news/systems-design-for-interviews/)
 * [Solved Examples of System Design](http://blog.gainlo.co/index.php/category/system-design-interview-questions/)
 
 ## Solve with Friends
