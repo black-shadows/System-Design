@@ -3,7 +3,7 @@
 > Picking the right architecture = Picking the right battles + Managing trade-offs
 
 <p align="center">
-  <img src="title.png">
+  <img src="images/title.png">
 </p>
 
 ## What are System Design Questions?
