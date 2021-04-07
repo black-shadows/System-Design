@@ -147,15 +147,15 @@ Here are some real-life architectures I'd recommend you read, analyze and unders
 
 | Product | Question |
 | ---      | ---      | 
-| <img src="images/uber.jpeg" width="52" />  | [A nice article about how Uber had to scale fast, about breaking your service into many microservices spread across many repos](http://highscalability.com/blog/2016/10/12/lessons-learned-from-scaling-uber-to-2000-engineers-1000-ser.html) |
-| <img src="images/facebook.jpeg" width="52" />| [How Facebook handles 800,000 simultaneous viewers on a live stream](http://highscalability.com/blog/2016/6/27/how-facebook-live-streams-to-800000-simultaneous-viewers.html) | |
-| <img src="images/twitter.jpeg" width="52" />| [How Twitter handles 3,000 image uploads per second and why the old ways it used would not work nowadays](http://highscalability.com/blog/2016/4/20/how-twitter-handles-3000-images-per-second.html) |
-| <img src="images/salesforce.jpeg" width="52" />| [A relatively short example from Salesforce.](http://highscalability.com/blog/2013/9/23/salesforce-architecture-how-they-handle-13-billion-transacti.html) |
-| <img src="images/espn.png" width="52" />| [Another awesome and thorough example, this time from the digital media industry.](http://highscalability.com/blog/2013/11/4/espns-architecture-at-scale-operating-at-100000-duh-nuh-nuhs.html) |
-| <img src="images/twitter.jpeg" width="52" />| Finally, some good example of Twitter subcomponents: [Storing data](http://highscalability.com/blog/2011/12/19/how-twitter-stores-250-million-tweets-a-day-using-mysql.html) and [Timeline](http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html) |
-| <img src="images/google.png" width="52" />| [Google Architecture](http://highscalability.com/google-architecture) |
-| <img src="images/youtube.png" width="52" />| [Youtube Architecture](http://highscalability.com/youtube-architecture) |
-| <img src="images/stackoverflow.png" width="52" />| [StackOverflow Architecture](http://highscalability.com/blog/2009/8/5/stack-overflow-architecture.html) |
+| <img src="images/uber.jpeg" width="70" height="50" />  | [A nice article about how Uber had to scale fast, about breaking your service into many microservices spread across many repos](http://highscalability.com/blog/2016/10/12/lessons-learned-from-scaling-uber-to-2000-engineers-1000-ser.html) |
+| <img src="images/facebook.jpeg" width="70" height="50" />| [How Facebook handles 800,000 simultaneous viewers on a live stream](http://highscalability.com/blog/2016/6/27/how-facebook-live-streams-to-800000-simultaneous-viewers.html) | |
+| <img src="images/twitter.jpeg" width="70" height="50" />| [How Twitter handles 3,000 image uploads per second and why the old ways it used would not work nowadays](http://highscalability.com/blog/2016/4/20/how-twitter-handles-3000-images-per-second.html) |
+| <img src="images/salesforce.jpeg" width="70" height="50" />| [A relatively short example from Salesforce.](http://highscalability.com/blog/2013/9/23/salesforce-architecture-how-they-handle-13-billion-transacti.html) |
+| <img src="images/espn.png" width="70" height="50" />| [Another awesome and thorough example, this time from the digital media industry.](http://highscalability.com/blog/2013/11/4/espns-architecture-at-scale-operating-at-100000-duh-nuh-nuhs.html) |
+| <img src="images/twitter.jpeg" width="70" height="50" />| Finally, some good example of Twitter subcomponents: [Storing data](http://highscalability.com/blog/2011/12/19/how-twitter-stores-250-million-tweets-a-day-using-mysql.html) and [Timeline](http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html) |
+| <img src="images/google.png" width="70" height="50" />| [Google Architecture](http://highscalability.com/google-architecture) |
+| <img src="images/youtube.png" width="70" height="50" />| [Youtube Architecture](http://highscalability.com/youtube-architecture) |
+| <img src="images/stackoverflow.png" width="70" height="50" />| [StackOverflow Architecture](http://highscalability.com/blog/2009/8/5/stack-overflow-architecture.html) |
 
 Don't worry if you don’t understand everything. Many of the posts contain lots of nitty-gritty details which, while priceless to know on your job, are not requirements at interviews. Try to focus on the shared principles used, and keep track of the lessons learned by these folks.
 
