@@ -29,7 +29,7 @@ The idea of these questions is to have a discussion about the problem at hand. W
 
 Remember that there is no one right answer. A system can be built in different ways. The important thing is to be able to justify your ideas. This is somewhat different from the algorithm design questions as discussed here at [InterviewBit](https://github.com/black-shadows/InterviewBit-Topicwise-Solutions) and [LeetCode](https://github.com/black-shadows/LeetCode-Topicwise-Solutions).
 
-Finally, keep in mind that the discussion about the same system design problem could go in different directions depending on the goals of the interviewer. They may be willing to see how you create a high-level architecture covering all aspects of the system. Or rather, they could be more interested in looking at a few specific areas and diving deeper into them. In any case, you should have a strategy for how to approach the different situations. We will look into such strategies in the next sections.
+Finally, keep in mind that the discussion about the same system design problem could go in different directions depending on the goals of the interviewer. They may be willing to see how you create a high-level architecture covering all aspects of the system. Or rather, they could be more interested in looking at a few specific areas and diving deeper into them. In any case, you should have a strategy for how to approach different situations. We will look into such strategies in the next sections.
 
 ## Our Approach
 
@@ -147,21 +147,21 @@ Here are some real-life architectures I'd recommend you read, analyze and unders
 
 | Product | Question |
 | ---      | ---      | 
-| <img src="images/uber.jpeg" width="70" height="50" />  | [A nice article about how Uber had to scale fast, about breaking your service into many microservices spread across many repos](http://highscalability.com/blog/2016/10/12/lessons-learned-from-scaling-uber-to-2000-engineers-1000-ser.html) |
+| <img src="images/uber.jpeg" width="70" height="50" />  | [How Uber had to scale fast, about breaking your service into many microservices spread across many repos](http://highscalability.com/blog/2016/10/12/lessons-learned-from-scaling-uber-to-2000-engineers-1000-ser.html) |
 | <img src="images/facebook.jpeg" width="70" height="50" />| [How Facebook handles 800,000 simultaneous viewers on a live stream](http://highscalability.com/blog/2016/6/27/how-facebook-live-streams-to-800000-simultaneous-viewers.html) | |
 | <img src="images/twitter.jpeg" width="70" height="50" />| [How Twitter handles 3,000 image uploads per second and why the old ways it used would not work nowadays](http://highscalability.com/blog/2016/4/20/how-twitter-handles-3000-images-per-second.html) |
 | <img src="images/salesforce.jpeg" width="70" height="50" />| [A relatively short example from Salesforce.](http://highscalability.com/blog/2013/9/23/salesforce-architecture-how-they-handle-13-billion-transacti.html) |
 | <img src="images/espn.png" width="70" height="50" />| [Another awesome and thorough example, this time from the digital media industry.](http://highscalability.com/blog/2013/11/4/espns-architecture-at-scale-operating-at-100000-duh-nuh-nuhs.html) |
 | <img src="images/twitter.jpeg" width="70" height="50" />| Finally, some good example of Twitter subcomponents: [Storing data](http://highscalability.com/blog/2011/12/19/how-twitter-stores-250-million-tweets-a-day-using-mysql.html) and [Timeline](http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html) |
-| <img src="images/google.png" width="70" height="50" />| [Google Architecture](http://highscalability.com/google-architecture) |
-| <img src="images/youtube.png" width="70" height="50" />| [Youtube Architecture](http://highscalability.com/youtube-architecture) |
-| <img src="images/stackoverflow.png" width="70" height="50" />| [StackOverflow Architecture](http://highscalability.com/blog/2009/8/5/stack-overflow-architecture.html) |
+| <img src="images/google.png" width="70" height="50" />| [How Google store and manage huge amount of data](http://highscalability.com/google-architecture) |
+| <img src="images/youtube.png" width="70" height="50" />| [How YouTube distribute their most popular content and priortize resources](http://highscalability.com/youtube-architecture) |
+| <img src="images/stackoverflow.png" width="70" height="50" />| [How Stackoverflow handles 16 million page views and 3 million unique visitors a month](http://highscalability.com/blog/2009/8/5/stack-overflow-architecture.html) |
 
 Don't worry if you don’t understand everything. Many of the posts contain lots of nitty-gritty details which, while priceless to know on your job, are not requirements at interviews. Try to focus on the shared principles used, and keep track of the lessons learned by these folks.
 
 As you read the posts, you'll start noticing common technologies and patterns appear. As you do, make sure you do some research on each frequently seen technology. Try to write down **what problem it solves**, what its alternatives are, and what some common pros and cons may be.
 
-One good way to research the alternatives to technology is to type its name in Google followed by the text " vs ", and see what shows up in the Google Suggest box. For example, if you typed "rabbitmq vs" you'd get entires like "rabbitmq vs activemq", "rabbitmq vs redis", "rabbitmq vs msmq", "rabbitmq vs kafka" - which is a pretty good list to get you started. 
+One good way to research the alternatives to technology is to type its name in Google followed by the text " vs ", and see what shows up in the Google Suggest box. For example, if you typed "rabbitmq vs" you'd get entries like "rabbitmq vs activemq", "rabbitmq vs redis", "rabbitmq vs msmq", "rabbitmq vs kafka" - which is a pretty good list to get you started. 
 
 The goal of all this reading (other than having tons of fun) is to develop practical knowledge about what works and what doesn’t work in “the real world”. After reviewing a bunch of these architectures and seeing where they agree or disagree, you’d be very well positioned to move on to the next step.
 
